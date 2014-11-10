@@ -1,0 +1,25 @@
+body>div{
+	margin:0 auto;
+	height: 800px;
+	width:800px;
+	border:8px solid yellow;	
+}
+div>div>div{
+	width:100px;
+	height:100px;
+	display:block;
+	float:left;
+}
+
+div:nth-child(even)>div:nth-child(even){
+	background-color: black;
+}
+div:nth-child(odd)>div:nth-child(odd){
+	background-color: black;
+}
+div:nth-child(even)>div:nth-child(odd){
+	background-color: red;
+}
+div:nth-child(odd)>div:nth-child(even){
+	background-color: red;
+}

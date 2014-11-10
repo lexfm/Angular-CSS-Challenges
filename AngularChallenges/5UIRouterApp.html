@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="UIRouterApp">
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<style type="text/css">
+	body>nav{border-radius: 0;}
+</style>
+    <script src="angular.min.js"></script>  
+    <script src="angular-ui-router.js"></script>
+    <script src="UIRouterApp.js"></script>
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+</nav>
+    <div ui-view></div>
+    <!-- We'll also add some navigation: -->
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
+</body>
+</body>
+</html>

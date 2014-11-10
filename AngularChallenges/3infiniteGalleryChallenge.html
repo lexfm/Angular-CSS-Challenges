@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>3: Infinite Scroll Gallery Challenge Angular</title>
+       
+        <script type="text/javascript" src="angular.min.js"></script> 
+           <script type="text/javascript" src="infiniteGalleryChallenge.js"></script>
+           <style type="text/css">
+    .fixed {
+    height: 400px;
+    width:600px;
+    overflow: auto;
+		}
+	.fixed img{
+	margin:10px; 
+		}
+           </style>
+    </head>
+<body ng-app="infiniteGalleryChallenge">
+<div class="fixed" infinite-scroll  scrollfunction="loadMore()">
+<img ng-repeat="image in images" ng-src="http://placehold.it/250/44B3FC/&text={{image}}">
+</div>
+
+</body>
+</html>

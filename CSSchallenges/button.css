@@ -1,0 +1,36 @@
+a {	
+	display: block; 
+	margin:0 auto;
+	margin-top:75px;
+	width:101px;
+	text-align: center;
+    text-decoration: none; font: menu;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 2px 1px 8px 1px;
+    background: linear-gradient(180deg, #DEDEDE 50%,#D4D4D4 50%);
+    color: rgba(0,0,0,0.6);
+    position: relative;
+    border: solid 1px #878787;  
+   	border-radius: 6px;
+   	box-shadow:
+        0 0 0 2px hsl(0, 0%, 70%),
+        0 0 0 3px hsl(0, 100%, 100%),
+        0 0 0 4px hsl(0, 0%, 50%);    
+}
+
+a:before {
+	font-size: 14px;
+	color:rgba(0,0,0,0.3);
+	margin-right: 5px;
+   content: "\2605";
+}
+a:after {
+	font-size: 14px;
+	color:rgba(0,0,0,0.3);
+	margin-left: 5px;
+   content: "\2605";
+}
+a:active {
+    border-color: ButtonHighLight ButtonHighlight ButtonHighlight ButtonHighlight;
+}

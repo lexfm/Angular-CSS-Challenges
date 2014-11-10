@@ -1,0 +1,84 @@
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 20px 50px 150px;
+  font-size: 13px;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+  background-repeat: no-repeat;
+}
+
+ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #555;
+  color: #fff;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover, ul li ul li:hover~li { background: #666; -webkit-animation : moveItems 0.5s 1 linear;}
+ul li ul li:hover{scale(1.2,1.2)}
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation : bounceList 0.2s 1 linear;
+}
+
+@-webkit-keyframes bounceList{
+  0%{-webkit-transform:rotateX(0deg)scale(1.1,1.2)}
+  25%{-webkit-transform:rotateX(20deg) }
+  50%{-webkit-transform:rotateX(0deg)scale(1.1,1.2)}
+  75%{-webkit-transform:rotateX(-20deg)}
+  100%{-webkit-transform:rotateX(0deg)scale(1.1,1.2)}
+}
+
+@-webkit-keyframes moveItems{
+  from{-webkit-transform:rotateY(0deg)}
+  to{-webkit-transform:rotateY(360deg);}
+  
+}

@@ -1,0 +1,66 @@
+#widgetContainer{
+    width:25%;
+    margin:10% auto;
+}
+
+.raitingText{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+}
+
+.ratingWidget {
+    float:left;
+    border: none;
+}
+
+.ratingWidget:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.ratingWidget:not(:checked) > label {
+    float:right;
+    width:0.9em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#83B4F7;
+    text-shadow:.1em .1em .2em rgba(0,0,0,.5);
+}
+
+.ratingWidget:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.ratingWidget > input:checked ~ label {
+    color: rgb(0,128,255);
+    text-shadow:1px 1px gray, 2px 2px #ddd, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.ratingWidget:not(:checked) > label:hover,
+.ratingWidget:not(:checked) > label:hover ~ label {
+    color: rgb(0,128,255);
+    text-shadow:.1em .1em .2em rgba(0,0,0,.5);
+}
+
+.ratingWidget > input:checked + label:hover,
+.ratingWidget > input:checked + label:hover ~ label,
+.ratingWidget > input:checked ~ label:hover,
+.ratingWidget > input:checked ~ label:hover ~ label,
+.ratingWidget > label:hover ~ input:checked ~ label {
+    color: #1806BF;
+    text-shadow:.1em .1em .2em rgba(0,0,0,.5);
+}
+
+
+.ratingWidget > label:active {
+    position:relative;
+    top:3px;
+    left:2px;
+}

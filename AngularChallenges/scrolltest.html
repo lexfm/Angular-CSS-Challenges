@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>3: Infinite Scroll Gallery Challenge Angular</title>
+       <style type="text/css">
+       li {
+  height: 120px;
+  border-bottom: 1px solid gray;
+}
+
+#fixed {
+    height: 400px;
+    width:600px;
+    overflow: auto;
+}
+#fixed img{
+margin:10px; 
+}
+</style>
+        
+    </head>
+<body ng-app="scrollChallenge" ng-controller="Main">
+<div id="fixed" when-scrolled="loadMore()">
+  <!--<ul>
+    <li ng-repeat="i in items">{{i.id}}</li>
+  </ul>  -->
+  <img ng-repeat="i in items" ng-src="http://placehold.it/250/44B3FC/&text={{i.id}}">
+</div>
+ <script type="text/javascript" src="angular.min.js"></script> 
+ <script type="text/javascript" src="scrolltest.js"></script>
+
+</body>
+</html>

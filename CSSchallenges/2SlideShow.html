@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>Slideshow Css</title>
+		<link rel="stylesheet" type="text/css" href="slideshow.css">
+	</head>
+	<body>
+<div id='carousel'>
+    <ul>
+        <li class="selected"><img src='slide1.jpg'></li>
+        <li><img src='slide2.jpg'></li>
+        <li><img src='slide3.jpg'></li>
+    </ul>
+    <div id="buttoncontainer">
+    	<a class="likeabutton" id='previous'>Previous</a><label class="likeabutton">Select Transition Type</label><a class="likeabutton" id='next'>Next</a>
+    <select id='selection' class="sign-up-button">
+    <option></option>
+    	<option value="1">Fade</option>
+    	<option value="2">Blind</option>
+    	<option value="3">Drawer</option>
+    </select>
+    <br/>
+    <input id="automatic" type="checkbox"/> <span>Play automatic</span>
+    </div>
+    
+    
+</div>
+</body>
+<script type="text/javascript" src="slideshow.js"></script>
+</html>

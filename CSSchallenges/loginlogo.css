@@ -1,0 +1,104 @@
+#mainContainer{ 
+position:relative;
+overflow:hidden;
+height:300px;
+margin-top:5%;
+}
+
+#menuContainer{
+	margin: 0 auto;
+	width:60%;
+	background-color: #ddd;
+	height:200px;
+}
+#toogle{
+	position: absolute;
+	top:0px;
+	left:59%;
+	background-color: #ddd;
+	width:280px;
+	height:300px; 
+	border-radius: 4px;
+}
+
+.loginMenu{
+	height: 100%;
+	
+}
+
+
+a.leftLink, a.rightLink, .loginMenu input{
+	width:15%;
+	display:block;
+	margin-top: 80px;
+	margin-right: 10px;
+	padding: 5px;
+	text-align: center;
+    text-decoration: none; font: menu;
+	font-size: 2em;
+	font-weight: bold;
+    padding: 2px 1px 8px 1px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.7) 50%);
+    color: rgba(255,255,255,0.8);
+    position: relative;
+    border: solid 1px #878787;  
+   	border-radius: 6px;
+   	box-shadow:
+        0 0 0 2px hsl(0, 0%, 70%),
+        0 0 0 3px hsl(0, 100%, 100%),
+        0 0 0 4px hsl(0, 0%, 50%); 
+}
+
+a.leftLink{
+		float:left;
+}
+a.rightLink{
+	
+	float:right;
+}
+
+a img{
+	float:left;
+	display: inline-block;
+	height: 200px;
+	width:250px;
+}
+
+
+.loginMenu a, .loginMenu input{
+	width: 80%;
+	float:none;
+	display: block;
+	margin: 10% auto;
+}
+
+.loginMenu input{
+	background: linear-gradient(180deg, rgba(255,255,255,0.5) 50%,rgb(240,240,240) 50%);
+	color: rgba(0,0,0,0.7);
+}
+
+.loginMenu {
+	/*overflow-y: scroll;
+	/* complete liquid height based on the parent's height!! */
+    height:100%;
+   	-webkit-transition:-webkit-transform 1s ease-out;
+       -moz-transition:   -moz-transform 1s ease-out;
+        -ms-transition:    -ms-transform 1s ease-out;
+            transition:        transform 1s ease-out;
+}
+
+.loginMenu.opened { 
+    /* visible */
+    -webkit-transform: translate(0, 0%);
+       -moz-transform: translate(0, 0%);
+        -ms-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+}
+.loginMenu.closed { 
+    /* completely offscreen */
+    -webkit-transform: translate(0, -100%);
+       -moz-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+}
+

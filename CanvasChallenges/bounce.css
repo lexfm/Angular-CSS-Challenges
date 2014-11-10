@@ -1,0 +1,6 @@
+/* Some basic styling */
+#canvas {
+	border: 1px solid black;
+	margin: 50px auto;
+	display: block;
+}

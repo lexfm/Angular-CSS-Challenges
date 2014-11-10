@@ -1,0 +1,90 @@
+#Playfield{
+	width: 1200px;
+	height:600px;
+	margin: 3% auto;
+	background-color: green;
+	padding:10px;
+}
+
+.card{
+	width:10%;
+	height:30%;
+	background-color: brown;
+	float:left;
+	margin:10px 10px 10px 19px;
+	border-radius: 12px;
+	transition: all 1s;
+}
+.card.down{
+	background: url("cards/back.png");
+	background-size: 100% 100%;
+}
+
+.card.up{
+	webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.card.up.one, .card.one.persist{
+	background: url("cards/1.png");
+	background-size: 100% 100%;
+}
+.card.up.two, .card.two.persist{
+	background: url("cards/2.png");
+	background-size: 100% 100%;
+}
+.card.up.three, .card.three.persist{
+	background: url("cards/3.png");
+	background-size: 100% 100%;
+}
+.card.up.four, .card.four.persist{
+	background: url("cards/4.png");
+	background-size: 100% 100%;
+}
+.card.up.five, .card.five.persist{
+	background: url("cards/5.png");
+	background-size: 100% 100%;
+}
+.card.up.six, .card.six.persist{
+	background: url("cards/6.png");
+	background-size: 100% 100%;
+}
+.card.up.seven, .card.seven.persist{
+	background: url("cards/7.png");
+	background-size: 100% 100%;
+}
+.card.up.eight, .card.eight.persist{
+	background: url("cards/8.png");
+	background-size: 100% 100%;
+}
+.card.up.nine, .card.nine.persist{
+	background: url("cards/9.png");
+	background-size: 100% 100%;
+}
+.card.up.ten, .card.ten.persist{
+	background: url("cards/10.png");
+	background-size: 100% 100%;
+}
+.card.up.eleven, .card.eleven.persist{
+	background: url("cards/11.png");
+	background-size: 100% 100%;
+}
+.card.up.twelve, .card.twelve.persist{
+	background: url("cards/12.png");
+	background-size: 100% 100%;
+}
+
+.card-flip.up {
+	webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	
+	
+}
+.card-flip.down {
+	webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);	
+}
+
+.card.persist{
+	webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+}

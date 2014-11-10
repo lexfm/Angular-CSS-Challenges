@@ -1,0 +1,68 @@
+.sign-up-button{
+	text-align: center;
+	width:30%;
+	text-decoration: none;
+	display: block;
+	font-size: 1.5em;
+	margin:0 auto;
+	margin-top:10px;
+	color:rgb(255,255,255);
+	font-weight: bold;
+	background-color: #F24188;
+	border-radius: 21px
+	
+}
+
+#container{
+	text-align: center;
+	padding:3px 5px;
+	margin:0 auto;
+	width:500px;
+	margin-top: 150px;
+}
+
+#container label{
+	font:menu;
+	font-size: 3.5em;
+
+}
+
+#container input{
+	width:180px;
+	height:48px;
+	outline:none;
+	border:none;
+	border-bottom: solid 1px black;
+	font-size: 3em;
+	color:rgb(0,128,255);
+}
+
+input:invalid+ .tipmessage:before{
+	content:"Type 5 characters or more";
+	color:white;
+	font:menu;
+	font-size: 1.2em;
+	position: absolute;
+	top:17.2%;
+	left:50%;
+	display:block;
+	width:240px;
+	height: 40px;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 4px;
+	box-shadow: 0 0 3px 4px rgba(0,0,0,0.2);
+}
+
+input:invalid+ .tipmessage:after{
+	content:"";
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 16px solid rgba(0,0,0,0.7);
+	position: absolute;
+	top:23.2%;
+	left:59%;
+}
+
+

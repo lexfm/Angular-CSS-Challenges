@@ -1,0 +1,18 @@
+<div>
+   <table>
+    <tr class="column-label">
+      <td></td>
+      <td ng-repeat="column in columns">{{column}}</td>
+    </tr>
+    <tr ng-repeat="row in rows">
+     <td class="row-label">{{row}}</td>
+      <td ng-repeat="column in columns">
+        <div>
+          <input ng-model="cells[column+row]"></input>
+          <div ng-bind="compute(column+row)"
+               class="output"></div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

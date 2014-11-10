@@ -1,0 +1,18 @@
+ul{
+	list-style-type: none;
+	margin:0 auto;
+	width:800px;
+}
+
+ul li a{
+	display: block;
+	margin:0 10px;
+	width: 5em;
+	text-decoration: none;
+	border: dotted 2px rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+ul li{
+	float: left;
+}

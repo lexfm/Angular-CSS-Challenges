@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lowest Common Ancestor Algorithm</title>
+	<p id="message">Lowest Common Ancestor of </p>
+	<ul id="Root"> Root:
+		<li id="Node1"> Node 1
+			<ul id="Node1List">
+				<li id="Node2"> Node 2
+					<ul id="Node2List">
+						<li id="Node3">Node 3</li>
+						<li id="Node4">Node 4</li>
+					</ul>
+				</li>
+				<li id="Node5">Node 5</li>
+				<li id="Node6">Node 6
+					<ul id="Node6List">
+						<li id="Node7">Node 7</li>
+						<li id="Node8"> Node 8</li>
+						<li id="Node9"> Node 9</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li id="Node10"> Node 10
+			<ul id="Node10List">
+				<li id="Node11">Node 11</li>
+			</ul>
+		</li>
+		<li id="Node12"> Node 12
+			<ul id="Node12List">
+				<li id="Node13"> Node 13</li>
+				<li id="Node14">Node 14
+					<ul id="Node14List">
+						<li id="Node15">Node 15</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</head>
+<body>
+	
+<script type="text/javascript">
+var firstNode=document.getElementById("Node6");
+var SecondNode=document.getElementById("Node2");
+var message=document.getElementById("message");
+
+var lowestParent=commonAncestor(firstNode, SecondNode);
+message.innerText+=" "+firstNode.id+" and "+SecondNode.id+" is: "+lowestParent.id;
+
+	function parents(node) {
+  var nodes = [];
+  for (; node; node = node.parentNode) {
+    nodes.unshift(node);
+  }
+  return nodes;
+}
+
+function commonAncestor(node1, node2) {
+  var parents1 = parents(node1);
+  var parents2 = parents(node2);
+
+  if (parents1[0] != parents2[0]) throw "No common ancestor!";
+  
+  for (var i = 0; i < parents1.length; i++) {
+    if (parents1[i] != parents2[i]) return parents1[i - 1];
+  }
+}
+</script>	
+</body>
